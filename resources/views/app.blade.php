@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{config('app.name')}}</title>
+    @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body>
-<div id="app"></div>
+<body class="bg-slate-800 text-slate-50">
+<div id="app">Test</div>
 </body>
 </html>
