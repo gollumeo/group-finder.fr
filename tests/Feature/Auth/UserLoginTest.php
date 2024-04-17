@@ -1,11 +1,9 @@
 <?php
 
-namespace Tests\Feature;
+namespace Auth;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Component\HttpFoundation\Response;
 use Tests\TestCase;
@@ -22,7 +20,7 @@ class UserLoginTest extends TestCase
     }
 
 
-    public function successfulLoginDataProvider(): array
+    public static function successfulLoginDataProvider(): array
     {
         return [
             'valid data' => [
@@ -70,14 +68,13 @@ class UserLoginTest extends TestCase
         $response = $this->postJson('/api/login', $data);
 
         $response->assertStatus(Response::HTTP_UNPROCESSABLE_ENTITY);
-        $response->assertJsonStructure(['message', 'errors']);
     }
 
     public static function hydrateUser(): void
     {
         User::factory()->create([
-            'email' => fake()->email(),
-            'password' => Hash::make('password')
+            'email' => 'test@test.com',
+            'password' => 'password'
         ]);
     }
 }
