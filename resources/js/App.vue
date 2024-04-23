@@ -40,7 +40,7 @@
                 </p>
             </div>
             <div class="info-2">
-                <h3>Trouver vos mates ou votre guilde</h3>
+                <h3>Trouvez vos mates ou votre guilde</h3>
                 <p>
                     Marre de devoir attendre des heures pour entrer en donjon ? Les
                     clown fiesta en PU vous agacent ? Envie de vous lancer dans les
