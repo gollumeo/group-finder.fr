@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* TODO: Convert to Tailwind &/or customize Tailwind's theme */
+
 * {
     margin: 0;
     padding: 0;
