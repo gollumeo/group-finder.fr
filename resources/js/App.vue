@@ -1,17 +1,15 @@
 <template>
     <header>
         <div class="upper">
-            <img class="logo" src="../../public/assets/img/logo.jpeg" alt="logo"/>
+<!--            <img class="logo" src="../../public/assets/img/logo.jpeg" alt="logo"/>-->
         </div>
         <nav class="top-nav">
-            <ul>
 <!--        TODO: router-links when vue routes are created        -->
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Chercher des joueurs</a></li>
-                <li><a href="#">Chercher une guilde</a></li>
-                <li><a href="#">Connexion</a></li>
-                <li><a href="#">Rejoignez-nous !</a></li>
-            </ul>
+                <a href="#">Accueil</a>
+                <a href="#">Chercher des joueurs</a>
+                <a href="#">Chercher une guilde</a>
+                <a href="#">Connexion</a>
+                <a href="#">Rejoignez-nous !</a>
         </nav>
     </header>
     <main>
