@@ -47,8 +47,6 @@ class AuthController
             'password' => 'required|string',
         ];
 
-        dump(User::all());
-
         $validator = Validator::make(request()->all(), $rules);
 
         if ($validator->fails()) {
@@ -57,15 +55,15 @@ class AuthController
 
         $validated = $validator->validated();
 
-        if (!auth()->attempt($validated)) {
-            return response()->json(['message' => 'Unauthorized'], 401, [], JSON_PRETTY_PRINT);
+        if (!auth()->guard('web')->attempt($validated)) {
+            return response()->json(['message' => 'Accès non autorisé'], 401, [], JSON_PRETTY_PRINT);
         }
 
-        $user = auth()->user();
-//        $token = $user->
+        auth()->user();
+//        request()->session()->regenerate();
 
 
-        return response()->json($user, 200, [], JSON_PRETTY_PRINT);
+        return response()->json("Connexion effectuée avec succès!", 200, [], JSON_PRETTY_PRINT);
     }
 }
 //        $token = auth()->user()->createToken('authToken')->plainTextToken;
