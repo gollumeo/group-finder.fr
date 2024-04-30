@@ -11,6 +11,10 @@ module.exports = {
             fontFamily: {
                 'sans': ['Montserrat Alternates', 'ui-sans-serif', 'system-ui'],
             },
+
+            backgroundImage: {
+                'logo': "url('./../../public/assets/img/logo.jpeg')",
+            }
         },
     },
     plugins: [],

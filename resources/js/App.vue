@@ -1,15 +1,15 @@
 <template>
     <header>
         <div class="upper">
-<!--            <img class="logo" src="../../public/assets/img/logo.jpeg" alt="logo"/>-->
+            <!--            <img class="logo" src="../../public/assets/img/logo.jpeg" alt="logo"/>-->
         </div>
         <nav class="top-nav">
-<!--        TODO: router-links when vue routes are created        -->
-                <a href="#">Accueil</a>
-                <a href="#">Chercher des joueurs</a>
-                <a href="#">Chercher une guilde</a>
-                <a href="#">Connexion</a>
-                <a href="#">Rejoignez-nous !</a>
+            <!--        TODO: router-links when vue routes are created        -->
+            <a href="#" class="top-nav-link">Accueil</a>
+            <a href="#" class="top-nav-link">Chercher des joueurs</a>
+            <a href="#" class="top-nav-link">Chercher une guilde</a>
+            <a href="#" class="top-nav-link">Connexion</a>
+            <a href="#" class="top-nav-link">Rejoignez-nous !</a>
         </nav>
     </header>
     <main>
@@ -19,40 +19,51 @@
         >inder
         </h1>
         <div class="accroche">
-            <p>
-                Rejoignez une <span class="first-letter">communauté</span> vibrante de joueurs de World of Warcraft et
-                partez à l'aventure ensemble ! Trouvez votre groupe idéal pour
-                conquérir les <span class="first-letter">donjons</span>, affronter les <span class="first-letter">boss épiques</span>
-                et forger des
-                amitiés durables. Que votre <span class="first-letter">quête</span> commence ici !
-            </p>
-            <img class="dragon" src="../../public/assets/img/wow-dragon.jpg" alt="foeoc kannilc"/>
+            <article>
+                <p>
+                    Rejoignez une <span class="first-letter">communauté</span> vibrante de joueurs de World of Warcraft
+                    et
+                    partez à l'aventure ensemble ! Trouvez votre groupe idéal pour
+                    conquérir les <span class="first-letter">donjons</span>, affronter les <span class="first-letter">boss épiques</span>
+                    et forger des
+                    amitiés durables. Que votre <span class="first-letter">quête</span> commence ici !
+                </p>
+                <button>
+                    Trouvez vos mates !
+                </button>
+            </article>
+            <img class="dragon" src="../../public/assets/img/wow-dragon.jpg" alt="Foeoc Kannilc"/>
         </div>
         <h2>Comment ça marche ?</h2>
         <article class="article-info">
-            <div class="info-1">
-                <h3>Créez votre profil</h3>
-                <p>
-                    Inscrivez-vous pour créer votre profil et pouvoir ainsi cibler vos
-                    recherches !
-                </p>
+            <div class="info-container">
+                <p>1</p>
+                <section class="info-1">
+                    <h3>Créez votre profil</h3>
+                    <p>
+                        Inscrivez-vous pour créer votre profil et pouvoir ainsi cibler vos
+                        recherches plus efficacement !
+                    </p>
+                </section>
             </div>
-            <div class="info-2">
-                <h3>Trouvez vos mates ou votre guilde</h3>
-                <p>
-                    Marre de devoir attendre des heures pour entrer en donjon ? Les
-                    clown fiesta en PU vous agacent ? Envie de vous lancer dans les
-                    raids mais vous n'avez pas encore trouvé la guilde de vos rêves ?
-                    Grâce à notre outil de recherche de groupe, vous allez arrêter de
-                    slacker en capitale !
-                </p>
+            <div class="info-container">
+                <p>2</p>
+                <section class="info-2">
+                    <h3>Trouvez vos mates</h3>
+                    <p>
+                        Trouvez vos mates ou votre future guilde en un clin d'oeil et arrêtez de slacker en capitale ou de subir des clown fiestas !
+                    </p>
+                </section>
             </div>
-            <div class="info-3">
-                <h3>Jouez & profitez</h3>
-                <p>
-                    N'attendez plus et rejoignez une communauté grandissante de joueurs
-                    de WoW qui n'attendent plus que vous !
-                </p>
+            <div class="info-container">
+                <p>3</p>
+                <section class="info-3">
+                    <h3>Jouez & profitez</h3>
+                    <p>
+                        N'attendez plus et rejoignez une communauté grandissante de joueurs
+                        de WoW qui n'attendent plus que vous !
+                    </p>
+                </section>
             </div>
         </article>
         <section class="cta">
