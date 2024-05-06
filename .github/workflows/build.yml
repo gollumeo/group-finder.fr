@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    if: "!contains(github.actor, '[bot]')"
     runs-on: ubuntu-latest
 
     steps:
@@ -23,3 +24,9 @@ jobs:
 
     - name: Build
       run: npm run build
+
+    - name: Push changes
+      if: success()
+      uses: ad-m/github-push-action@main
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
