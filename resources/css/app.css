@@ -52,7 +52,7 @@ header {
 }
 
 .accroche article {
-    @apply rounded-lg text-2xl text-justify font-medium p-4 text-slate-300 flex flex-col items-center justify-between h-60;
+    @apply rounded-lg text-2xl text-justify font-medium p-4 text-slate-300 flex flex-col items-center justify-between h-72;
 }
 
 .accroche article button {
@@ -64,7 +64,8 @@ header {
 }
 
 .dragon {
-    @apply rounded-lg transition-transform shadow-lg h-[250px];
+    background: radial-gradient(circle, rgba(238, 137, 110, 0.68) 0%, rgba(15,23,42,0) 35%);
+    @apply rounded-lg transition-transform h-[275px] -mt-8;
 }
 
 h2 {
@@ -76,7 +77,7 @@ h2::first-letter {
 }
 
 .article-info {
-    @apply w-3/4 mx-auto flex flex-row gap-x-5 mb-8;
+    @apply w-3/4 mx-auto flex flex-row gap-x-5 mb-12;
 }
 
 .article-info p:first-child {
@@ -112,19 +113,21 @@ h3::first-letter {
 }
 
 .article-info p {
-
     @apply text-justify font-medium text-base text-slate-300;
 }
 
 .cta {
     width: 60%;
-    height: 15vh;
+    min-height: 20vh;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(15 23 42);
+    /*background-color: black;*/
+    border-radius: 15px;
+
+    @apply border border-slate-500 my-2;
 }
 
 .quote {

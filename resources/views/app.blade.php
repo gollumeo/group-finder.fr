@@ -15,7 +15,7 @@
     <title>{{config('app.name')}}</title>
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body id="app" class="bg-gradient-to-br from-black via-slate-800 to-black">
+<body id="app" class="bg-gradient-to-br from-black via-slate-800 to-black flex flex-col min-h-screen h-full">
 
 </body>
 </html>

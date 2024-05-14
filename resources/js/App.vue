@@ -1,7 +1,6 @@
 <template>
     <header>
         <div class="upper">
-            <!--            <img class="logo" src="../../public/assets/img/logo.jpeg" alt="logo"/>-->
         </div>
         <nav class="top-nav">
             <!--        TODO: router-links when vue routes are created        -->
@@ -12,10 +11,9 @@
             <a href="#" class="top-nav-link">Rejoignez-nous !</a>
         </nav>
     </header>
-    <main>
+    <main class="flex-1">
         <h1 class="first-title">
-            <span class="first-letter">G</span>roup<span class="first-letter"
-        >F</span
+            <span class="first-letter">G</span>roup<span class="first-letter">F</span
         >inder
         </h1>
         <div class="accroche">
@@ -32,7 +30,7 @@
                     Trouvez vos mates !
                 </button>
             </article>
-            <img class="dragon" src="../../public/assets/img/wow-dragon.jpg" alt="Foeoc Kannilc"/>
+            <img class="dragon" src="../../public/assets/img/group.png" alt="Foeoc Kannilc"/>
         </div>
         <h2>Comment ça marche ?</h2>
         <article class="article-info">
