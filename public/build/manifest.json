@@ -1,0 +1,34 @@
+{
+  "public/assets/img/logo.jpeg": {
+    "file": "assets/logo-BxTNHWil.jpeg",
+    "src": "public/assets/img/logo.jpeg"
+  },
+  "public/assets/img/wow-dragon.jpg": {
+    "file": "assets/wow-dragon-CvapikQB.jpg",
+    "src": "public/assets/img/wow-dragon.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-AnpHvvaI.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-By-QK3wz.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/views/Home.vue"
+    ],
+    "assets": [
+      "assets/wow-dragon-CvapikQB.jpg"
+    ]
+  },
+  "resources/js/views/Home.vue": {
+    "file": "assets/Home-5E4u-1Fj.js",
+    "src": "resources/js/views/Home.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  }
+}
