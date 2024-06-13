@@ -1,7 +1,5 @@
 <template>
     <header>
-        <div class="upper">
-        </div>
         <nav class="top-nav">
             <!--        TODO: router-links when vue routes are created        -->
             <a href="#" class="top-nav-link">Accueil</a>

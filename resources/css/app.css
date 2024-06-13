@@ -2,28 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TODO: Convert to Tailwind &/or customize Tailwind's theme */
-
-/** {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    box-sizing: content-box;*/
-/*    font-family: "Montserrat Alternates", sans-serif;*/
-/*    list-style-type: none;*/
-/*    text-decoration: none;*/
-/*}*/
-
 header {
-    /*width: 75%;*/
-    /*margin: 2.5% auto;*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*align-items: center;*/
-    /*justify-content: space-between;*/
-    /*border-bottom: 1px solid rgb(203 213 225);*/
-    /*padding-bottom: 10px;*/
-    /*gap: 25px;*/
-
     @apply w-3/4 mx-auto my-12 flex flex-row items-center justify-between border-b border-slate-300 pb-4;
 }
 
