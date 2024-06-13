@@ -30,7 +30,11 @@ jobs:
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
         git add .
-        git commit -m "Build assets [skip ci]"
+        if git diff-index --quiet HEAD --; then
+          echo "No changes to commit"
+        else
+          git commit -m "Build assets [skip ci]"
+        fi
 
     - name: Push changes
       if: success()
