@@ -1,7 +1,9 @@
 <template>
-    <header>
+    <header class="header-landing">
         <nav class="top-nav">
-            <!--        TODO: router-links when vue routes are created        -->
+            <a href="#" class="top-nav-link-logo">
+                <img class="logo-header-landing" src="../../public/assets/img/logo.jpeg" alt="logo">
+            </a>
             <a href="#" class="top-nav-link">Accueil</a>
             <a href="#" class="top-nav-link">Chercher des joueurs</a>
             <a href="#" class="top-nav-link">Chercher une guilde</a>
