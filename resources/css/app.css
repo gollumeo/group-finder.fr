@@ -27,7 +27,7 @@ main {
 }
 
 .first-title {
-    @apply text-6xl text-center text-slate-300 my-16 font-semibold;
+    @apply text-6xl text-center text-indigo-100 my-16 font-semibold;
 }
 
 .first-letter {
