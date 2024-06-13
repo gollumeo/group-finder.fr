@@ -30,7 +30,7 @@
                     Trouvez vos mates !
                 </button>
             </article>
-            <img class="dragon" src="../../public/assets/img/group.png" alt="Foeoc Kannilc"/>
+            <img class="team-img" src="../../public/assets/img/group.png" alt="Foeoc Kannilc"/>
         </div>
         <h2>Comment ça marche ?</h2>
         <article class="article-info">
