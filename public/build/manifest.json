@@ -8,12 +8,13 @@
     "src": "public/assets/img/logo.jpeg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-TkH7tPYN.css",
+    "file": "assets/app-XhtgY2z4.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BdID7Des.js",
+    "file": "assets/app-CAMDJxnI.js",
+    "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
@@ -24,7 +25,8 @@
     ]
   },
   "resources/js/views/Home.vue": {
-    "file": "assets/Home-Ci-Jtfpw.js",
+    "file": "assets/Home-DrXUHFkg.js",
+    "name": "Home",
     "src": "resources/js/views/Home.vue",
     "isDynamicEntry": true,
     "imports": [

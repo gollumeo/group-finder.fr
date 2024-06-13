@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as s,a as t}from"./app-CAMDJxnI.js";const c={name:"Home.vue"},a={class:"bg-slate-900"},n=t("h1",null,"Hello World",-1),_=[n];function r(l,d,i,p,m,f){return s(),o("div",a,_)}const h=e(c,[["render",r]]);export{h as default};
