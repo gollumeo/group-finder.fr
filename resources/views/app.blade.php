@@ -13,9 +13,9 @@
     />
     <link rel="shortcut icon" href="{{asset('./assets/img/logo.jpeg')}}" type="image/x-icon">
     <title>{{config('app.name')}}</title>
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/js/app.js', 'resources/css/app.scss'])
 </head>
-<body id="app" class="">
+<body id="app">
 
 </body>
 </html>
