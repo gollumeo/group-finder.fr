@@ -2,7 +2,7 @@
     <header class="header-landing">
         <nav class="top-nav">
             <a href="#" class="top-nav-link-logo">
-                <img class="logo-header-landing" src="../../../public/assets/img/logo.jpeg" alt="logo">
+                <img class="logo-header-landing" src="../../../../public/assets/img/logo.jpeg" alt="logo">
             </a>
             <a href="#" class="top-nav-link">Accueil</a>
             <a href="#" class="top-nav-link">Chercher des joueurs</a>
@@ -30,7 +30,7 @@
                     Trouvez vos mates !
                 </button>
             </article>
-            <img class="team-img" src="../../../public/assets/img/group.png" alt="Foeoc Kannilc"/>
+            <img class="team-img" src="../../../../public/assets/img/group.png" alt="Foeoc Kannilc"/>
         </section>
         <h2>Comment ça marche ?</h2>
         <section class="info-wrapper">
