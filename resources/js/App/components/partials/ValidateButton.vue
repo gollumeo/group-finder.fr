@@ -1,5 +1,5 @@
 <template>
-    <button class="btn">
+    <button class="btn" @click="emitValidate">
         {{ innerText }}
         <font-awesome-icon v-if="icon" :icon="icon" />
     </button>
@@ -21,6 +21,12 @@ export default {
         icon: {
             type: String,
             required: false
+        }
+    },
+
+    methods: {
+        emitValidate() {
+            this.$emit('validate');
         }
     }
 }
