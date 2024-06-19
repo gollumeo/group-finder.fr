@@ -1,5 +1,5 @@
 <template>
-    <button class="btn" @click="emitValidate">
+    <button :class="buttonClass" @click="emitValidate">
         {{ innerText }}
         <font-awesome-icon v-if="icon" :icon="icon" />
     </button>
@@ -16,12 +16,28 @@ export default {
     props: {
         innerText: {
             type: String,
-            required: true
+            default: 'Valider'
         },
         icon: {
             type: String,
             required: false
+        },
+        size: {
+            type: String,
+            validator(value) {
+                return ['sm', 'base'].includes(value)
+            },
+            default: 'base'
         }
+    },
+
+    computed: {
+      buttonClass() {
+          return {
+              'btn btn-sm': this.size === 'sm',
+              'btn': this.size === 'base'
+          }
+      }
     },
 
     methods: {
