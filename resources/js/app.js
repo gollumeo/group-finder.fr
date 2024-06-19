@@ -18,7 +18,6 @@ library.add(
     faFilePdf
 )
 
-// app.config.globalProperties.$api = apiInstance;
 app.config.globalProperties.$toast = toast;
 app.config.globalProperties.$instance = instance;
 
