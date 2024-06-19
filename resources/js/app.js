@@ -1,12 +1,11 @@
-import '../bootstrap.js';
+import './bootstrap.js';
 import {createApp} from 'vue'; // Importing createApp correctly
 import {createPinia} from 'pinia';
-import {instance} from "./api-instance.js";
+import {instance} from "@/api-instance.js";
 import App from '@/App.vue';
-import {router} from './router/index.js';
+import {router} from '@/router/index.js';
 import toast from "vue-toastification";
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 const pinia = createPinia();
 const app = createApp(App);
