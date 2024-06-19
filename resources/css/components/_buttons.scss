@@ -1,11 +1,11 @@
 .btn {
-    @apply inline-flex px-3 py-2 bg-indigo-600 text-slate-100 rounded-[5px] font-medium hover:bg-indigo-800 h-[45px] min-w-[150px] items-center justify-center;
+    @apply inline-flex px-3 py-2 bg-indigo-700 text-indigo-100 rounded-[5px] hover:bg-indigo-800 h-10 w-40 justify-center;
 
     &:has(svg) {
-        @apply pl-2 gap-1;
+        @apply px-2 gap-1 items-center;
 
         svg {
-            @apply size-3 p-2 bg-indigo-300 rounded-full flex items-center justify-center text-indigo-800;
+            @apply size-3 p-1.5 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-800;
         }
     }
 
@@ -19,5 +19,9 @@
                 @apply size-2 p-1;
             }
         }
+    }
+
+    &:disabled {
+        @apply bg-indigo-700/50 cursor-not-allowed [&_svg]:bg-indigo-100/70 text-indigo-100/70;
     }
 }

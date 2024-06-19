@@ -1,7 +1,7 @@
 <template>
-    <button :class="buttonClass" @click="emitValidate">
-        {{ innerText }}
+    <button :class="buttonClass" @click="emitValidate" :disabled="disabled">
         <font-awesome-icon v-if="icon" :icon="icon" />
+        {{ innerText }}
     </button>
 </template>
 
@@ -20,7 +20,7 @@ export default {
         },
         icon: {
             type: String,
-            required: false
+            default: 'fa-solid fa-check'
         },
         size: {
             type: String,
@@ -28,6 +28,10 @@ export default {
                 return ['sm', 'base'].includes(value)
             },
             default: 'base'
+        },
+        disabled: {
+            type: Boolean,
+            default: false
         }
     },
 

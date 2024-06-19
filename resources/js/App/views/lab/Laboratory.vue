@@ -1,10 +1,10 @@
 <template>
     <div class="p-4 border border-indigo-100 h-full flex gap-2">
-        <button class="btn btn-sm">
-            <font-awesome-icon icon="fa-solid fa-file-pdf" />
+        <button class="btn">
+            <font-awesome-icon icon="fa-solid fa-check" />
             Button test
         </button>
-        <ValidateButton innerText="test" @validate="console.log('coucou')" />
+        <ValidateButton innerText="test" @validate="console.log('coucou')" disabled/>
     </div>
 </template>
 
