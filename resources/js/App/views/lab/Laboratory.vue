@@ -3,7 +3,7 @@
         <ValidateButton />
         <ValidateButton innerText="Disabled" @validate="console.log('coucou')" disabled/>
         <CancelButton @cancel="console.log('coucou')" />
-        <CancelButton innerText="Disabled" disabled/>
+        <CancelButton disabled/>
     </div>
 </template>
 
