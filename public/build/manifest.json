@@ -13,7 +13,7 @@
     "isEntry": true
   },
   "resources/js/App/views/LandingPage.vue": {
-    "file": "assets/LandingPage-vzFPoXZb.js",
+    "file": "assets/LandingPage-CVXdsUq2.js",
     "name": "LandingPage",
     "src": "resources/js/App/views/LandingPage.vue",
     "isDynamicEntry": true,
@@ -26,7 +26,7 @@
     ]
   },
   "resources/js/App/views/lab/Laboratory.vue": {
-    "file": "assets/Laboratory-CJmpsJvv.js",
+    "file": "assets/Laboratory-CAohvatv.js",
     "name": "Laboratory",
     "src": "resources/js/App/views/lab/Laboratory.vue",
     "isDynamicEntry": true,
@@ -35,7 +35,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-CPrf8KXx.js",
+    "file": "assets/app-BlyVTXf3.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
