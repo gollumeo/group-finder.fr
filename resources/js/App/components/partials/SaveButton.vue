@@ -1,5 +1,5 @@
 <template>
-    <button :class="buttonClass" @click="emitCancel" :disabled="disabled">
+    <button :class="buttonClass" @click="emitSave" :disabled="disabled">
         <font-awesome-icon v-if="icon" :icon="icon" />
         {{ innerText }}
     </button>
