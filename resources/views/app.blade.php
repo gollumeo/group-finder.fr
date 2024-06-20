@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,9 +13,9 @@
     />
     <link rel="shortcut icon" href="{{asset('./assets/img/logo.jpeg')}}" type="image/x-icon">
     <title>{{config('app.name')}}</title>
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/js/app.js', 'resources/css/app.scss'])
 </head>
-<body id="app" class="bg-gradient-to-br from-black via-slate-800 to-black flex flex-col min-h-screen h-full">
+<body id="app">
 
 </body>
 </html>

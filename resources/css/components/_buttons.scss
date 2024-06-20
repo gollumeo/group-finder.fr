@@ -1,0 +1,39 @@
+.btn {
+    @apply inline-flex px-3 py-2 bg-indigo-700 text-indigo-100 rounded-[5px] hover:bg-indigo-800 h-10 w-40 justify-center;
+
+    &:has(svg) {
+        @apply px-2 gap-1 items-center;
+
+        svg {
+            @apply size-3 p-1.5 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-800;
+        }
+    }
+
+    &.btn-sm {
+        @apply h-[30px] text-sm min-w-[130px];
+
+        &:has(svg) {
+            @apply pl-1 gap-1;
+
+            svg {
+                @apply size-2 p-1;
+            }
+        }
+    }
+
+    &.btn-red {
+        @apply bg-rose-600 hover:bg-rose-700;
+
+        svg {
+            @apply bg-rose-100 text-rose-800;
+        }
+
+        &:disabled {
+            @apply bg-rose-700/50 cursor-not-allowed [&_svg]:bg-rose-100/70 text-rose-100/70;
+        }
+    }
+
+    &:disabled {
+        @apply bg-indigo-700/50 cursor-not-allowed [&_svg]:bg-indigo-100/70 text-indigo-100/70;
+    }
+}

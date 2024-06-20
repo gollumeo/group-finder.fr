@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
+import path from 'path';
 
 export default defineConfig({
     plugins: [
-        laravel(['resources/css/app.css','resources/js/app.js']),
+        laravel(['resources/css/app.scss','resources/js/app.js']),
         vue({
             template: {
                 transformAssetUrls: {
@@ -27,6 +28,8 @@ export default defineConfig({
     resolve: {
         alias: {
             vue: 'vue/dist/vue.esm-bundler.js',
+            '@': path.resolve(__dirname, './resources/js/App'),
+            '@partials': path.resolve(__dirname, './resources/js/App/components/partials')
         }
     }
 });
