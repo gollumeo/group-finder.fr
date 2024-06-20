@@ -21,6 +21,18 @@
         }
     }
 
+    &.btn-red {
+        @apply bg-rose-600 hover:bg-rose-700;
+
+        svg {
+            @apply bg-rose-100 text-rose-800;
+        }
+
+        &:disabled {
+            @apply bg-rose-700/50 cursor-not-allowed [&_svg]:bg-rose-100/70 text-rose-100/70;
+        }
+    }
+
     &:disabled {
         @apply bg-indigo-700/50 cursor-not-allowed [&_svg]:bg-indigo-100/70 text-indigo-100/70;
     }
