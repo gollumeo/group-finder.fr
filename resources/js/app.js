@@ -13,11 +13,13 @@ const app = createApp(App);
 // FA ICONS
 import {
    faFilePdf,
-    faCheck
+    faCheck,
+    faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
     faFilePdf,
-    faCheck
+    faCheck,
+    faXmark
 )
 
 app.config.globalProperties.$toast = toast;
