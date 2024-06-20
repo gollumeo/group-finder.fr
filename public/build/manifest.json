@@ -7,30 +7,41 @@
     "file": "assets/logo-BxTNHWil.jpeg",
     "src": "public/assets/img/logo.jpeg"
   },
-  "resources/css/app.css": {
-    "file": "assets/app-B6PC_OO2.css",
-    "src": "resources/css/app.css",
+  "resources/css/app.scss": {
+    "file": "assets/app-CvEGgb81.css",
+    "src": "resources/css/app.scss",
     "isEntry": true
   },
+  "resources/js/App/views/LandingPage.vue": {
+    "file": "assets/LandingPage-vzFPoXZb.js",
+    "name": "LandingPage",
+    "src": "resources/js/App/views/LandingPage.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "assets": [
+      "assets/logo-BxTNHWil.jpeg",
+      "assets/group-DG5MkORM.png"
+    ]
+  },
+  "resources/js/App/views/lab/Laboratory.vue": {
+    "file": "assets/Laboratory-CJmpsJvv.js",
+    "name": "Laboratory",
+    "src": "resources/js/App/views/lab/Laboratory.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
   "resources/js/app.js": {
-    "file": "assets/app-BLCygPYf.js",
+    "file": "assets/app-CPrf8KXx.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
-      "resources/js/views/Home.vue"
-    ],
-    "assets": [
-      "assets/group-DG5MkORM.png"
-    ]
-  },
-  "resources/js/views/Home.vue": {
-    "file": "assets/Home-Bezw1COM.js",
-    "name": "Home",
-    "src": "resources/js/views/Home.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/app.js"
+      "resources/js/App/views/LandingPage.vue",
+      "resources/js/App/views/lab/Laboratory.vue"
     ]
   }
 }
