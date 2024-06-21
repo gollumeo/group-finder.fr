@@ -36,10 +36,10 @@
                     <div
                         class="flex justify-end items-center p-4 md:p-5 border-t border-slate-200 rounded-b dark:border-slate-600 gap-2">
                         <slot name="footer">
-                            <button type="button" :disabled="disabledValidate" @click="$emit('validate')"
+                            <button type="button" :disabled="disabledValidate" @click="$emit('close')"
                                     v-if="!closeOnly" class="btn btn-blue">{{
                                     titleValidate }}</button>
-                            <ValidateButton @click="show = false; $emit('close')" />
+                            <ValidateButton @click="show = false; $emit('validate')" />
                         </slot>
                     </div>
                     <slot name="loading"></slot>
