@@ -10,7 +10,7 @@
     }
 
     &.btn-sm {
-        @apply h-[30px] text-sm min-w-[130px];
+        @apply h-[30px] text-sm w-28;
 
         &:has(svg) {
             @apply pl-1 gap-1;
@@ -31,6 +31,19 @@
         &:disabled {
             @apply bg-rose-700/50 cursor-not-allowed [&_svg]:bg-rose-100/70 text-rose-100/70;
         }
+    }
+
+    &.btn-green {
+        @apply bg-teal-600 hover:bg-teal-700;
+
+        svg {
+            @apply bg-teal-100 text-teal-800;
+        }
+
+        &:disabled {
+            @apply bg-teal-700/50 cursor-not-allowed [&_svg]:bg-teal-100/70 text-teal-100/70;
+        }
+
     }
 
     &:disabled {
