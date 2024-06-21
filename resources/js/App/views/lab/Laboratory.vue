@@ -6,6 +6,7 @@
         <CancelButton disabled size="sm"/>
         <SaveButton />
         <SaveButton disabled size="sm" />
+        <Modal v-model="testModal" />
     </div>
 </template>
 
@@ -14,9 +15,16 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import ValidateButton from "@partials/ValidateButton.vue";
 import CancelButton from "@partials/CancelButton.vue";
 import SaveButton from "@partials/SaveButton.vue";
+import Modal from "@/components/modules/Modal.vue";
 
 export default {
     name: "Laboratory",
-    components: {SaveButton, CancelButton, ValidateButton, FontAwesomeIcon}
+    components: {Modal, SaveButton, CancelButton, ValidateButton, FontAwesomeIcon},
+
+    data() {
+        return {
+            testModal: true
+        }
+    }
 }
 </script>
