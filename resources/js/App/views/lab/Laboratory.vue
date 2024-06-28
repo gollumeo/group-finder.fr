@@ -4,7 +4,7 @@
         <ValidateButton innerText="Disabled" @validate="console.log('coucou')" disabled size="sm"/>
         <CancelButton @cancel="console.log('coucou')" />
         <CancelButton disabled size="sm"/>
-        <SaveButton />
+        <SaveButton @click="this.testModal = true"/>
         <SaveButton disabled size="sm" />
         <Modal v-model="testModal" />
     </div>
@@ -23,7 +23,7 @@ export default {
 
     data() {
         return {
-            testModal: true
+            testModal: false
         }
     }
 }

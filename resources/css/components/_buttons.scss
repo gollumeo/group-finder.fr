@@ -1,5 +1,5 @@
 .btn {
-    @apply inline-flex px-3 py-2 bg-indigo-700 text-indigo-100 rounded-[5px] hover:bg-indigo-800 h-10 w-40 justify-center;
+    @apply inline-flex px-3 py-2 bg-indigo-700 text-indigo-100 rounded-[5px] hover:bg-indigo-800 h-10 w-40 justify-center focus:ring focus:ring-indigo-500;
 
     &:has(svg) {
         @apply px-2 gap-1 items-center;
@@ -22,7 +22,7 @@
     }
 
     &.btn-red {
-        @apply bg-rose-600 hover:bg-rose-700;
+        @apply bg-rose-600 hover:bg-rose-700 focus:ring-rose-500;
 
         svg {
             @apply bg-rose-100 text-rose-800;
@@ -34,7 +34,7 @@
     }
 
     &.btn-green {
-        @apply bg-teal-600 hover:bg-teal-700;
+        @apply bg-teal-600 hover:bg-teal-700 focus:ring-teal-500;
 
         svg {
             @apply bg-teal-100 text-teal-800;
