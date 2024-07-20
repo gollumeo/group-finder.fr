@@ -2,10 +2,8 @@
 
 namespace Tests\Feature\Auth;
 
-use App\Http\Controllers\Auth\AuthController;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Component\HttpFoundation\Response;
 use Tests\TestCase;
@@ -92,4 +90,3 @@ class UserRegisterTest extends TestCase
         ]);
     }
 }
-
