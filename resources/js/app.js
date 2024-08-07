@@ -5,17 +5,18 @@ import {instance} from "@/api-instance.js";
 import App from '@/App.vue';
 import {router} from '@/router/index.js';
 import toast from "vue-toastification";
-import { library } from '@fortawesome/fontawesome-svg-core'
+import {library} from '@fortawesome/fontawesome-svg-core'
 
 const pinia = createPinia();
 const app = createApp(App);
 
 // FA ICONS
 import {
-   faFilePdf,
+    faFilePdf,
     faCheck,
     faXmark,
 } from "@fortawesome/free-solid-svg-icons";
+
 library.add(
     faFilePdf,
     faCheck,
