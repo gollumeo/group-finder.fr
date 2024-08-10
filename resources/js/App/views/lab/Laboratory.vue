@@ -25,6 +25,10 @@ export default {
         return {
             testModal: false
         }
+    },
+
+    mounted() {
+        this.$toast.warning('test')
     }
 }
 </script>
