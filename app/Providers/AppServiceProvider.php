@@ -8,7 +8,6 @@ use App\Domain\Authentification\Strategies\BattleNetAuthentificationStrategy;
 use App\Domain\Authentification\Strategies\EmailAuthentificationStrategy;
 use App\Domain\User\Contracts\UserRepositoryContract;
 use App\Domain\User\Factories\UserFactory;
-use App\Infrastructure\Authentication\Strategies\EmailAuthenticationStrategy;
 use App\Infrastructure\Persistence\Eloquent\EloquentUserRepository;
 use Illuminate\Support\ServiceProvider;
 
