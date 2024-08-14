@@ -2,7 +2,7 @@
 
 namespace Auth;
 
-use App\Models\User;
+use App\Domain\User\Entities\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Symfony\Component\HttpFoundation\Response;
 use Tests\TestCase;
