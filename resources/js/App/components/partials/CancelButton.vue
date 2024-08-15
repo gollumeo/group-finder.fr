@@ -1,6 +1,6 @@
 <template>
     <button :class="buttonClass" @click="emitCancel" :disabled="disabled">
-        <font-awesome-icon v-if="icon" :icon="icon" />
+        <font-awesome-icon v-if="hasIcon" :icon="icon" />
         {{ innerText }}
     </button>
 </template>
@@ -17,6 +17,10 @@ export default {
         innerText: {
             type: String,
             default: 'Annuler'
+        },
+        hasIcon: {
+            type: Boolean,
+            default: true
         },
         icon: {
             type: String,

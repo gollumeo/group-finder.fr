@@ -1,9 +1,12 @@
 <template>
-    <div class="p-4 border border-indigo-100 h-full flex gap-2">
+    <div class="p-4 border border-indigo-100 h-full flex gap-2 items-center">
         <ValidateButton />
-        <ValidateButton innerText="Disabled" @validate="console.log('coucou')" disabled/>
+        <ValidateButton innerText="Disabled" @validate="console.log('coucou')" disabled size="sm"/>
         <CancelButton @cancel="console.log('coucou')" />
-        <CancelButton disabled/>
+        <CancelButton disabled size="sm"/>
+        <SaveButton @click="this.testModal = true"/>
+        <SaveButton disabled size="sm" />
+        <Modal v-model="testModal" />
     </div>
 </template>
 
@@ -11,9 +14,21 @@
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import ValidateButton from "@partials/ValidateButton.vue";
 import CancelButton from "@partials/CancelButton.vue";
+import SaveButton from "@partials/SaveButton.vue";
+import Modal from "@/components/modules/Modal.vue";
 
 export default {
     name: "Laboratory",
-    components: {CancelButton, ValidateButton, FontAwesomeIcon}
+    components: {Modal, SaveButton, CancelButton, ValidateButton, FontAwesomeIcon},
+
+    data() {
+        return {
+            testModal: false
+        }
+    },
+
+    mounted() {
+        this.$toast.warning('test')
+    }
 }
 </script>

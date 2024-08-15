@@ -38,8 +38,8 @@ export default {
     computed: {
         buttonClass() {
             return {
-                'btn btn-red btn-sm': this.size === 'sm',
-                'btn btn-red': this.size === 'base'
+                'btn btn-green btn-sm': this.size === 'sm',
+                'btn btn-green': this.size === 'base'
             }
         }
     },

@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Models\User;
+use App\Domain\User\Entities\User;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 
-class AuthController
+final class AuthController extends Controller
 {
     /**
      * @throws ValidationException
@@ -55,15 +56,14 @@ class AuthController
 
         $validated = $validator->validated();
 
-        if (!auth()->guard('web')->attempt($validated)) {
+        if (! auth()->guard('web')->attempt($validated)) {
             return response()->json(['message' => 'Accès non autorisé'], 401, [], JSON_PRETTY_PRINT);
         }
 
         auth()->user();
-//        request()->session()->regenerate();
+        //        request()->session()->regenerate();
 
-
-        return response()->json("Connexion effectuée avec succès!", 200, [], JSON_PRETTY_PRINT);
+        return response()->json('Connexion effectuée avec succès!', 200, [], JSON_PRETTY_PRINT);
     }
 }
 //        $token = auth()->user()->createToken('authToken')->plainTextToken;

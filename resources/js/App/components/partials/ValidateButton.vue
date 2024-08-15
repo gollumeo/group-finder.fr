@@ -1,6 +1,6 @@
 <template>
     <button :class="buttonClass" @click="emitValidate" :disabled="disabled">
-        <font-awesome-icon v-if="icon" :icon="icon" />
+        <font-awesome-icon v-if="hasIcon" :icon="icon" />
         {{ innerText }}
     </button>
 </template>
@@ -21,6 +21,10 @@ export default {
         icon: {
             type: String,
             default: 'fa-solid fa-check'
+        },
+        hasIcon: {
+            type: Boolean,
+            default: true
         },
         size: {
             type: String,

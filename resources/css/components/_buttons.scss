@@ -1,5 +1,5 @@
 .btn {
-    @apply inline-flex px-3 py-2 bg-indigo-700 text-indigo-100 rounded-[5px] hover:bg-indigo-800 h-10 w-40 justify-center;
+    @apply inline-flex px-3 py-2 bg-indigo-700 text-indigo-100 rounded-[5px] hover:bg-indigo-800 h-10 w-40 justify-center focus:ring focus:ring-indigo-500;
 
     &:has(svg) {
         @apply px-2 gap-1 items-center;
@@ -10,7 +10,7 @@
     }
 
     &.btn-sm {
-        @apply h-[30px] text-sm min-w-[130px];
+        @apply h-[30px] text-sm w-28;
 
         &:has(svg) {
             @apply pl-1 gap-1;
@@ -22,7 +22,7 @@
     }
 
     &.btn-red {
-        @apply bg-rose-600 hover:bg-rose-700;
+        @apply bg-rose-600 hover:bg-rose-700 focus:ring-rose-500;
 
         svg {
             @apply bg-rose-100 text-rose-800;
@@ -31,6 +31,19 @@
         &:disabled {
             @apply bg-rose-700/50 cursor-not-allowed [&_svg]:bg-rose-100/70 text-rose-100/70;
         }
+    }
+
+    &.btn-green {
+        @apply bg-teal-600 hover:bg-teal-700 focus:ring-teal-500;
+
+        svg {
+            @apply bg-teal-100 text-teal-800;
+        }
+
+        &:disabled {
+            @apply bg-teal-700/50 cursor-not-allowed [&_svg]:bg-teal-100/70 text-teal-100/70;
+        }
+
     }
 
     &:disabled {
