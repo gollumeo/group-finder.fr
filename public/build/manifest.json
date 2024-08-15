@@ -8,12 +8,12 @@
     "src": "public/assets/img/logo.jpeg"
   },
   "resources/css/app.scss": {
-    "file": "assets/app-CvEGgb81.css",
+    "file": "assets/app-BvPqSjcC.css",
     "src": "resources/css/app.scss",
     "isEntry": true
   },
   "resources/js/App/views/LandingPage.vue": {
-    "file": "assets/LandingPage-CVXdsUq2.js",
+    "file": "assets/LandingPage-lZ1JTHKR.js",
     "name": "LandingPage",
     "src": "resources/js/App/views/LandingPage.vue",
     "isDynamicEntry": true,
@@ -26,7 +26,7 @@
     ]
   },
   "resources/js/App/views/lab/Laboratory.vue": {
-    "file": "assets/Laboratory-CAohvatv.js",
+    "file": "assets/Laboratory-BVxYXvwa.js",
     "name": "Laboratory",
     "src": "resources/js/App/views/lab/Laboratory.vue",
     "isDynamicEntry": true,
@@ -35,13 +35,16 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-BlyVTXf3.js",
+    "file": "assets/app-C5Zs1ySE.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
       "resources/js/App/views/LandingPage.vue",
       "resources/js/App/views/lab/Laboratory.vue"
+    ],
+    "css": [
+      "assets/app-C2Rkk2Fc.css"
     ]
   }
 }
