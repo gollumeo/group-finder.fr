@@ -2,46 +2,31 @@
 
 namespace App\Domain\User\Entities;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
+use App\Domain\User\ValueObjects\Email;
+use App\Domain\User\ValueObjects\Password;
+use App\Domain\User\ValueObjects\Username;
 
-class User extends Authenticatable
+readonly class User
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    public function __construct(
+        private Email    $email,
+        private Password $password,
+        private Username $username
+    )
+    {}
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
-
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
-
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
+    public function getEmail(): Email
     {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
+        return $this->email;
+    }
+
+    public function getPassword(): Password
+    {
+        return $this->password;
+    }
+
+    public function getUsername(): Username
+    {
+        return $this->username;
     }
 }
