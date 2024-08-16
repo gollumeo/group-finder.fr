@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
-use App\Application\Authentification\Services\Authenticator;
-use App\Domain\Authentification\Contracts\AuthenticatorContract;
-use App\Domain\Authentification\Strategies\BattleNetAuthentificationStrategy;
-use App\Domain\Authentification\Strategies\EmailAuthentificationStrategy;
+use App\Application\Authentication\Services\Authenticator;
+use App\Domain\Authentication\Contracts\AuthenticatorContract;
+use App\Domain\Authentication\Strategies\BattleNetAuthenticationStrategy;
+use App\Domain\Authentication\Strategies\EmailAuthenticationStrategy;
 use App\Domain\User\Contracts\UserRepositoryContract;
 use App\Domain\User\Factories\UserFactory;
 use App\Infrastructure\Persistence\Eloquent\EloquentUserRepository;
@@ -38,13 +38,13 @@ class AppServiceProvider extends ServiceProvider
 
         // Strategy bindings
         $this->app->bind('auth.strategy.email', function () {
-            return new EmailAuthentificationStrategy();
+            return new EmailAuthenticationStrategy();
         });
         $this->app->bind('auth.strategy.battlenet', function () {
-            return new BattleNetAuthentificationStrategy();
+            return new BattleNetAuthenticationStrategy();
         });
         $this->app->bind('auth.strategy.google', function () {
-            return new EmailAuthentificationStrategy();
+            return new EmailAuthenticationStrategy();
         });
     }
 
