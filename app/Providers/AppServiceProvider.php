@@ -9,6 +9,7 @@ use App\Domain\Authentication\Strategies\EmailAuthenticationStrategy;
 use App\Domain\User\Contracts\UserRepositoryContract;
 use App\Domain\User\Factories\UserFactory;
 use App\Infrastructure\Persistence\Eloquent\EloquentUserRepository;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -53,6 +54,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Model::preventLazyLoading();
     }
 }
